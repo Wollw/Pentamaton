@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>
+			Pentamaton
+		</title>
+		<!-- Style Sheet -->
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="style.css">
+		<!-- JavaScript -->
+		<script
+			type="application/javascript"
+			src="ObjectClone.js">
+		</script>
+		<script
+			type="application/javascript"
+			src="Pentamaton.js">
+		</script>
+		<script
+			type="application/javascript"
+			src="Pentagon.js">
+		</script>
+		<script
+			type="application/javascript"
+			src="AcuteTriangle.js">
+		</script>
+		<script
+			type="application/javascript"
+			src="TriangleFromPoints.js">
+		</script>
+		<script
+			type="application/javascript"
+			src="Tile.js">
+		</script>
+	</head>
+	<body onload="init();">
+		<table><tr><td>
+		<canvas id="pentamaton" width="400" height="400"></canvas></td><td>
+
+<!--		<div style="text-align:center;margin-left:auto;margin-right:auto;">Speed in BPM (Beats Per Minute)<br>
+		<textarea id="bpm" value="100"></textarea><br>
+		</div>
+		<br>
+-->
+		<div style="text-align:center;margin-left:auto;margin-right:auto;">Born<br>
+		<table style="text-align:center;display:inline-block"><tr>
+			<td>0</td><td>1</td><td>2</td>
+			<td>3</td><td>4</td><td>5</td>
+			<td>6</td><td>7</td><td>8</td>
+			<td>9</td><td>10</td>
+		</tr><tr>
+		<form name="rules_born">
+		<td><input type="checkbox" name="r0"></td>
+		<td><input type="checkbox" name="r1"></td>
+		<td><input type="checkbox" name="r2"></td>
+		<td><input type="checkbox" name="r3"></td>
+		<td><input type="checkbox" name="r4"></td>
+		<td><input type="checkbox" name="r5"></td>
+		<td><input type="checkbox" name="r6"></td>
+		<td><input type="checkbox" name="r7"></td>
+		<td><input type="checkbox" name="r8"></td>
+		<td><input type="checkbox" name="r9"></td>
+		<td><input type="checkbox" name="r10"></td>
+		</form>
+		</tr>
+		</table></div>
+		<br>
+
+		<div style="text-align:center;margin-left:auto;margin-right:auto;">Survive<br>
+		<table style="text-align:center;display:inline-block"><tr>
+			<td>0</td><td>1</td><td>2</td>
+			<td>3</td><td>4</td><td>5</td>
+			<td>6</td><td>7</td><td>8</td>
+			<td>9</td><td>10</td>
+		</tr><tr>
+		<form name="rules_survive">
+		<td><input type="checkbox" name="r0"></td>
+		<td><input type="checkbox" name="r1"></td>
+		<td><input type="checkbox" name="r2"></td>
+		<td><input type="checkbox" name="r3"></td>
+		<td><input type="checkbox" name="r4"></td>
+		<td><input type="checkbox" name="r5"></td>
+		<td><input type="checkbox" name="r6"></td>
+		<td><input type="checkbox" name="r7"></td>
+		<td><input type="checkbox" name="r8"></td>
+		<td><input type="checkbox" name="r9"></td>
+		<td><input type="checkbox" name="r10"></td>
+		</form>
+		</tr>
+		</table></div>
+		<br>
+
+		<div style="text-align:center;margin-left:auto;margin-right:auto;">
+		Initial State<br>
+		<table style="text-align:center;display:inline-block"><tr>
+			<td>0</td><td>1</td><td>2</td>
+			<td>3</td><td>4</td><td>5</td>
+			<td>6</td><td>7</td><td>8</td>
+			<td>9</td><td>10</td><td>11</td>
+			<td>12</td><td>13</td><td>14</td>
+			<td>15</td><td>16</td><td>17</td>
+			<td>18</td><td>19</td><td>20</td>
+		</tr><tr>
+		<form name="shapes">
+		<td><input type="checkbox" name="s0"></td>
+		<td><input type="checkbox" name="s1"></td>
+		<td><input type="checkbox" name="s2"></td>
+		<td><input type="checkbox" name="s3"></td>
+		<td><input type="checkbox" name="s4"></td>
+		<td><input type="checkbox" name="s5"></td>
+		<td><input type="checkbox" name="s6"></td>
+		<td><input type="checkbox" name="s7"></td>
+		<td><input type="checkbox" name="s8"></td>
+		<td><input type="checkbox" name="s9"></td>
+		<td><input type="checkbox" name="s10"></td>
+		<td><input type="checkbox" name="s11"></td>
+		<td><input type="checkbox" name="s12"></td>
+		<td><input type="checkbox" name="s13"></td>
+		<td><input type="checkbox" name="s14"></td>
+		<td><input type="checkbox" name="s15"></td>
+		<td><input type="checkbox" name="s16"></td>
+		<td><input type="checkbox" name="s17"></td>
+		<td><input type="checkbox" name="s18"></td>
+		<td><input type="checkbox" name="s19"></td>
+		<td><input type="checkbox" name="s20"></td>
+		</form>
+		</tr>
+		</table></div>
+		<br>
+		<div style="text-align:center;margin-left:auto;margin-right:auto;">
+		<button onclick="changeSettings();">Apply</button>
+		</div>
+		</td>
+
+		<td><img style="border:solid 1px" src="legend.png"></td>
+		
+		</tr></table>
+
+	</body>
+</html>
+
+
+
